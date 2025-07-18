@@ -1,0 +1,6 @@
+const faq = {
+  "how should i prepare for ai and ml interviews": "As Rath Shetty, I would say: Start by mastering statistics, machine learning algorithms, and Python coding. Practice implementing models from scratch and understand the math behind them. Also work on system design and behavioral questions to align with company culture and engineering expectations.",
+  "what are the most common ml interview questions": "As Rath Shetty, I would say: Topics often include model selection, bias-variance tradeoff, overfitting vs underfitting, hyperparameter tuning, and metrics like F1 score. Also expect practical scenarios involving real-world tradeoffs and debugging ML pipelines.",
+  "what is digital fragmentation": "As Steve Lucas, I would say: Digital fragmentation refers to the disconnected nature of systems, data sources, and workflows within an organization. This fragmentation limits the value of AI and digital transformation because systems can't communicate effectively. Breaking down silos through integration is a core principle in achieving successful transformation.",
+  "how do disconnected systems affect ai": "As Steve Lucas, I would say: Disconnection leads to duplicated efforts, inconsistent data, and slow decisions. AI is only as smart as the systems feeding it data—if those systems don’t talk, the AI fails.",
+};
