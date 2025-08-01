@@ -5,7 +5,8 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import { OpenAI } from 'openai';
 import { Pinecone } from '@pinecone-database/pinecone';
-import { getEncoding } from 'tiktoken';
+import tiktoken from 'tiktoken';
+const getEncoding = tiktoken.getEncoding;
 
 // Load environment variables
 dotenv.config();
