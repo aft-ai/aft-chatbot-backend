@@ -58,12 +58,16 @@ app.post('/chat', async (req, res) => {
     const embeddedUserQuestion = (await embedText([userMessage]))[0];
 
     // 2. Query Pinecone index
-    const queryResult = await index.query({
-      vector: embeddedUserQuestion,
-      topK: 5,
-      includeMetadata: true,
-      namespace: NAMESPACE
-    });
+const queryResult = await index.query(
+  {
+    vector: embeddedUserQuestion,
+    topK: 5,
+    includeMetadata: true
+  },
+  {
+    namespace: NAMESPACE
+  }
+);
 
     // 3. Prepare context
     const contextChunks = queryResult.matches?.map(match => match.metadata?.text || '').join('\n---\n');
