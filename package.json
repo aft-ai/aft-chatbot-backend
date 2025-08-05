@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "gpt-chatbot-backend",
   "version": "1.0.0",
   "description": "Express backend for GPT-powered chatbot",
@@ -7,15 +8,14 @@
     "start": "node server.js"
   },
   "dependencies": {
-     "@pinecone-database/pinecone": "^6.1.2",
+    "@pinecone-database/pinecone": "^6.1.2",
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
     "dotenv": "^16.6.1",
     "express": "^4.21.2",
     "openai": "^4.104.0",
     "tiktoken": "^1.0.21"
-}
-,
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
